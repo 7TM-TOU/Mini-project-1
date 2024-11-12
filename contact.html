@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="website icon" type="png" href="IMG/images.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("IMG/wallpaperflare.com_wallpaper (9).jpg");
+            margin-top: 0px;
+            padding: 0;
+        }
+        .portfolio-container {
+            width: 80%;
+            margin-top: 10px ;
+            margin-left: 10%;
+            margin-bottom: 5px;
+            background: transparent;
+            backdrop-filter: blur(10px);
+            padding: 16px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.436);
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .profile-image {
+            flex: 1;
+            text-align: center;
+            margin-right: 20px;
+        }
+        .profile-image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff69;
+        }
+        .profile-info {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .profile-info h1 {
+            margin: 0 0 10px 0;
+            font-size: 38px;
+            color: #ffffffff;
+        }
+        .profile-info p {
+            margin: 5px 0;
+            font-size: 28px;
+            color: #ffffff69;
+        }
+        .profile-info p span {
+            font-weight: bold;
+        }
+        .form-section {
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 2px;
+        }
+        .form-section h2 {
+            margin-top: 4px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            font-size: 34px;
+            color: #ffffff;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 16px;
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            color: rgb(255, 255, 255);
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #492a4c;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #b30098;
+        }
+    </style>
+</head>
+<body>
+    <div class="portfolio-container">
+        <div class="profile-image">
+            <img src="IMG\profil.jpg" alt="">
+        </div>
+        <div class="profile-info">
+            <h1>Touffahi Hatim</h1>
+            <p><span>Email:</span> hatimtouffahi14@gmail.com</p>
+            <p><span>Company:</span> HTMAIR AIRlines</p>
+            <p><span>Phone:</span> +212 657433259</p>
+        </div>
+    </div>
+    <div class="form-section">
+        <h2>Contact Me</h2>
+        <form action="contact.php" method="POST" >
+            <div class="form-group">
+                <input type="text" id="full_name" name="full_name" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <h2>Leave me your message here</h2>
+                <textarea id="Message" name="Message"  placeholder=" Leave Your Message " required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

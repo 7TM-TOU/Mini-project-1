@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chercher vos voyages</title>
+    <link rel="website icon" type="png" href="IMG/images.png">
+    <link rel="stylesheet" href="home.css">
+    <style>
+       .form-container {
+           margin-top: 5px;
+           margin-left: 130px;
+           width: 80%;
+           display: flex;
+           justify-content: center;
+       }
+
+       form.Port {
+           width: 100%;
+       }
+
+       .form-group {
+           margin-bottom: 15px;
+       }
+
+       h1 {
+           text-align: center;
+       }
+
+       button {
+           display: block;
+           margin: 0 auto;
+       }
+    </style>
+</head>
+<body>
+<dev class="form-container">
+        <form class="Port" method="post" action="voyages.php">
+            <h1>AIRPORT</h1>
+            <div class="form-group">
+                <input type="text" id="depart_port" name="depart_port" placeholder="depart port" >
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="text" id="arrivée_port" name="arrivée_port" placeholder="arrivée port" >
+            </div>
+
+            <h1>Date du voyage</h1>
+            <div class="form-group" >
+                <input type="date" id="date_départ" name="date_départ" placeholder="date de départ" >
+            </div>
+            <h1>Heure du départ</h1>
+            <div class="form-group">
+                <input type="time" id="Heure_départ" name="Heure_départ" placeholder="Heure départ" >
+            </div>
+            <div>
+                <button type="submit" value="search">Rechercher</button>
+            </div>
+
+        </form>
+    </dev>
+
+</body>
+</html>

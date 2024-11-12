@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMAIR</title>
+    <link rel="website icon" type="png" href="IMG/images.png">
+    <link rel="stylesheet" href="home.css">
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="home.html" class="logo">
+                    <img src="IMG/7TM-logo.png" width="130" height="80">
+                </a>
+            </li>
+            <li><a href="tickets.html" class="link" target="_blank">Tickets</a></li>
+            <li><a href="voyages.html" class="link" target="_blank">Voyages</a></li>
+            <li><a href="#" class="link">Abonnements</a></li>
+            <li><a href="signup.html" class="link" target="_blank">Sign up</a></li>
+            <li><a href="contact.html" class="link" target="_blank">Contact Us</a></li>
+
+        </ul>
+        </div>
+</head>
+<body>
+
+
+    <dev class="form-container">
+        <form class="Port" method="post" action="home1.php">
+            <h1>AIRPORT</h1>
+            <div class="form-group">
+                <input type="text" id="depart_port" name="depart_port" placeholder="depart port" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="text" id="arrivée_port" name="arrivée_port" placeholder="arrivée port" required>
+            </div>
+            <div>
+                <br><br>
+                <button type="submit" value="search">Rechercher</button>
+            </div>
+        </form>
+        <form class="Horaires" method="post" action="home2.php" >
+            <h1>Date du voyage</h1>
+            <div class="form-group" >
+                <input type="date" id="date_départ" name="date_départ" placeholder="date de départ" >
+            </div>
+            <h1>Heure du départ</h1>
+            <div class="form-group">
+                <input type="time" id="Heure_départ" name="Heure_départ" placeholder="Heure départ" >
+            </div>
+            <div>
+                <button type="submit" value="search">Rechercher</button>
+            </div>
+
+        </form>
+    </dev>
+</body>
+</html>

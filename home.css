@@ -1,0 +1,153 @@
+
+
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: space-evenly;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  padding: 0.5rem;
+  position: relative;
+  margin-left: auto;
+  text-align: center;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: all 0.6s ease;
+}
+
+.link::before {
+  bottom: 0;
+  left: 0;
+  align-items: center;
+}
+
+.link:hover::before {
+  transform: scaleX(1);
+  background-color: rgb(80, 167, 255);
+}
+
+
+
+
+
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+  padding: 0px;
+  position: relative;
+  transition: 0.35s ease;
+}
+.logo:hover {
+  opacity: 0.5;
+}
+
+  .button:hover {
+    background-color:rgb(86, 86, 86);
+  }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('IMG/empty-airplane-indoors-seating-nobody.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Microsoft JhengHei UI Light";
+    font-size: smaller;
+    color: #fff;
+}
+
+
+
+
+.form-container {
+  margin-top: 20px;
+  display: flex;
+
+}
+.form-container form{
+  margin-right: 50px;
+}
+
+.Port {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the form */
+    padding: 40px;
+    border-radius: 40px;
+    text-align: center;
+    width: 40%;
+    margin-left: 50px;
+}
+.Horaires {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the form */
+  padding: 40px;
+  border-radius: 40px;
+  text-align: center;
+  width: 40%;
+  float: inline-end;
+  margin-right: 10px;
+}
+
+
+.Port h2 {
+    margin-bottom: 30px;
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-right: 25px;
+    margin-top: 0px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for input fields */
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.form-group input::placeholder {
+    color: #ffffff;
+}
+button {
+    width: 70%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: darkcyan;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 0px;
+}
+button:hover {
+    background-color: darkblue;
+}

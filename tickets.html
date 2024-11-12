@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tickets Store</title>
+    <link rel="website icon" type="png" href="IMG/images.png">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .form-container {
+            margin-top: 5px;
+            margin-left: 130px;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+        }
+
+        form.Port {
+            width: 100%;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* Hide the default radio button */
+        input[type="radio"] {
+            display: none;
+        }
+
+        /* Create a custom radio button */
+        label:before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            vertical-align: middle;
+            background-color: #fff;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        /* Style the checked state */
+        input[type="radio"]:checked + label:before {
+            background-color: #007BFF;
+        }
+
+        /* Optional: Add some hover effects */
+        label:hover:before {
+            border-color: #007BFF;
+        }
+
+        /* Optional: Add a focus effect */
+        input[type="radio"]:focus + label:before {
+            outline: 2px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form class="Port" method="post" action="tickets.php">
+            <h1>Entrez votre voyage ID ici</h1>
+            <div class="form-group">
+                <input type="text" id="voyage_id" name="voyage_id" placeholder="Voyage ID" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="radio" id="classe1" name="classe" value="1" checked>
+                <label for="classe1">Classe 1</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="classe2" name="classe" value="2">
+                <label for="classe2">Classe 2</label>
+            </div>
+            <div>
+                <button type="submit" value="search">Rechercher</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

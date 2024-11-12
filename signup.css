@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('IMG/background1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: hsl(0, 0%, 100%);
+}
+
+.container {
+    width: 70%;
+    height: 10%;
+    margin-top: 0px;
+    align-items: center;
+    margin-left: 15%;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.login-form {
+    background-color: rgba(52, 52, 52, 0.7); /* Semi-transparent background for the form */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-right: 25px;
+    margin-top: 0px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for input fields */
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.form-group input::placeholder {
+    color: #fefefe;
+    text-align: center;
+
+}
+ #date_naissance{
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #a15fff;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00c3ff;
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #00c8ff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+.title{
+
+    text-align: center;
+
+    margin-top: auto;
+
+
+}
