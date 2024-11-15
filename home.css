@@ -151,3 +151,10 @@ button {
 button:hover {
     background-color: darkblue;
 }
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
